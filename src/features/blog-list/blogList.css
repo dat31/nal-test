@@ -1,0 +1,18 @@
+.skeleton {
+    background-color: #e9ecef;
+}
+
+.skeleton-img {
+    width: 64px;
+    height: 64px
+}
+
+.skeleton-title {
+    max-width: 126px;
+    height: 16px;
+}
+
+.skeleton-subtitle {
+    max-width: 266px;
+    height: 40px;
+}
