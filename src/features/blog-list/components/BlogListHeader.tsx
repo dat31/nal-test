@@ -72,7 +72,7 @@ function BlogListHeader({ filter, onFilterChange, onCreateClick, isDisabled }: P
                     <div key={key} className='col-auto'>
                         <div
                             className={'form-control '
-                                .concat(sort_by === key ? ' border-primary' : '')
+                                .concat(sort_by === key ? ' border-primary text-primary' : '')
                                 .concat(isDisabled ? ' cursor-not-allowed bg-light' : ' cursor-pointer')}
                             onClick={() =>
                                 !isDisabled &&
@@ -83,7 +83,9 @@ function BlogListHeader({ filter, onFilterChange, onCreateClick, isDisabled }: P
                             }
                         >
                             {text}{' '}
-                            {sort_by === key ? <i className={`ml-2 bi bi-sort-${sort_direction === 'asc' ? 'up' : 'down'}`} /> : null}
+                            {sort_by === key ? (
+                                <i className={`ml-2 text-primary bi bi-sort-${sort_direction === 'asc' ? 'up' : 'down'}`} />
+                            ) : null}
                         </div>
                     </div>
                 );
