@@ -13,7 +13,7 @@ function App() {
             <Router>
                 <Header />
                 <div className='container'>
-                    <ToastContainer transition={Slide} position={'bottom-center'} />
+                    <ToastContainer transition={Slide} position={'bottom-center'} autoClose={2000} />
                     <Suspense fallback={<span className='spinner-border spinner-border-sm mr-2' role='status' aria-hidden='true'></span>}>
                         <Routes>
                             <Route path='/' element={<Navigate to='/blogs' />} />
