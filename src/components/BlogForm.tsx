@@ -122,7 +122,7 @@ function BlogForm({ blog = { content: '', title: '' }, onSubmit, readOnly, isEdi
                         </div>
                         <button disabled={isDisableSubmit} type='submit' className='btn btn-primary d-flex ml-auto'>
                             {isSubmitting ? (
-                                <span className='spinner-border spinner-border-sm mr-2' role='status' aria-hidden='true'></span>
+                                <span className='spinner-border spinner-border-sm mr-2 my-auto' role='status' aria-hidden='true'></span>
                             ) : null}
                             Submit
                         </button>
