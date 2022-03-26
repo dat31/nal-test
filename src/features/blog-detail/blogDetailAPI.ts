@@ -25,7 +25,9 @@ async function mapBlogToFormData(b: Blog): Promise<FormData> {
     const formData = new FormData();
     formData.append('blog[title]', title as string);
     formData.append('blog[content]', content as string);
-
+    if (!image) {
+        return formData;
+    }
     const { file } = image as any;
     if (!file) {
         return formData;
